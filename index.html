@@ -40,7 +40,9 @@
 						if(s) window.eaglercraftOpts.joinServer = s;
 					}
 					
-					main();
+					if (typeof main === "function") main();
+else alert("Game code (classes.js) did not load!");
+
 				}
 			});
 		</script>
